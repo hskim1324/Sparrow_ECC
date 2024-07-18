@@ -29,13 +29,13 @@ Python implementation of Sparrow ECC (ISLPED 2024)
 * NumPy
 
 ## Error Injected Inference Example
-We provide the Pytorch implementation of Sparrow ECC as well as an inference example code to evaluate the accuracy of _ResNet50_ depending on bit error rate (BER). In this example, we 
+We provide the Python implementation of Sparrow ECC as well as an inference example code to evaluate the accuracy of _ResNet50_ depending on bit error rate (BER). In this example, we 
 * Encode _ResNet50_ pretrained weights provided by Pytorch using the _Sparrow ECC encoder_
 * To the encoded weights, inject random bit errors corresponding to a given bit error rate (BER)
 * Decode the weights to correct bit errors using the _Sparrow ECC decoder_
 * Evaluate image classification accuracy on the ImageNet validation dataset.
 
-First, change your directory to:
+First, change your directory to
 
 ```bash
 cd error_inject_sparrow_ecc
@@ -60,7 +60,7 @@ We provide the Python code used to analyze the exponent difference pattern in DN
 
 The code analyzes the distribution of `maximum exponent - minimum exponent` values within weight blocks (64 consecutive weights)
 
-First, change your directory to:
+First, change your directory to
 
 ```bash
 cd exponent_difference_analysis
