@@ -41,7 +41,7 @@ First, change your directory to
 cd error_inject_sparrow_ecc
 ```
 
-Then, fill in the path to your imagenet validation dataset in `inference_example.py`
+Then, fill in the path to your ImageNet validation dataset in `inference_example.py`
 
 For error injected inference evaluation, we support all combinations of `BERs (from 0 to 1)` and `1->0 bit error proportions (from 0% to 100%)`.
 
